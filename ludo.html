@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ludo Board game v.1.0</title>
+	<link rel="stylesheet" href="main.css">
+	<!--     <link rel="stylesheet" href=dice.css"> --->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="icon.png" type="image/png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+</head>
+<body>
+<audio id="diceSound">
+	<source src="dice.mp3" type="audio/mpeg">
+		your browser does not support the audio element.
+</audio>
+<audio id="killedsound">
+	<source src="killed.mp3" type="audio/mpeg">
+		your browser does not support the audio element.
+</audio>
+<audio id="winsound">
+	<source src="win.mp3" type="audio/mpeg">
+		your browser does not support the audio element.
+</audio>
+<audio id="inoutsound">
+	<source src="inout.mp3" type="audio/mpeg">
+		your browser does not suppot the audio element.
+</audio>
+<audio id="stopsound">
+	<source src="stop.mp3" type="audio/mpeg">
+		your browser does not support the audio element.
+</audio>
+ <div class="fixed">
+ 	<div class="welcome">
+ 		<div class="setting">
+ 			<div class="logo">
+ 				<img src="icon.png" class="logo">
+ </div>
+ <div class="name">
+ 	<input type="text" class="ri" placeholder="red player name...">
+ 	<input type="text" class="gi" placeholder="green player name...">
+ 	<input type="text" class="yi" placeholder="yellow player name...">
+ 	<input type="text" class="bi" placeholder="blue player name..."><br>
+ 	<button class="play">play</button><br>
+ 	 <span class="note">if only two players playing enter only two names</span>
+ </div>
+ <div class="footer">
+ 	made by Sridhar & team with ❤
+ </div>
+</div>
+</div>
+<div class="mainframe">
+	<div class="diceboard">
+		<div class="info">
+			<span class="playername">
+				player 1
+			</span>
+    <div class="r-dice" onclick="dice(this,0)">
+    	0
+    </div>
+    <div class="b-dice" onclick="dice(this,3)">
+    	0
+    </div>
+    <span class="playername">
+    	player 4
+    	</span>
+
+    </div>
+</div>
+<div class="mdiceboard">
+	<div class="info">
+		<span class="mplayername">
+			player 1
+		</span>
+		<div class="r-dice" onclick="dice(this,0)">
+			0
+		</div>
+	</div>
+
+	<div class="ludoboard">
+		<div class="red">
+			<div class="playerzone">
+				<div class="player"><span onclick="movered" class="rp r material-icons">stars</span></div>
+				
+
+ </body>
+</html>
